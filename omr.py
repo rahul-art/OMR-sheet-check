@@ -18,7 +18,7 @@ ANSWER_KEY = {0: 1, 1: 4, 2: 0, 3: 3, 4: 1}
 
 # load the image, convert it to grayscale, blur it
 # slightly, then find edges
-image = cv2.imread('/home/rahul/Downloads/pyimagesearch/optical-mark4/images/test_05.png')
+image = cv2.imread('path to input image')
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 blurred = cv2.GaussianBlur(gray, (5, 5), 0)
 edged = cv2.Canny(blurred, 75, 200)
